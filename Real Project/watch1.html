@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Images/mainlogo.png">
+    <title>AMSS Automatic</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="all-watch.css">
+</head>
+<body>
+    <div class="container"><div class="box">
+        <div class="first">
+            <div class="im1"><img src="../Images/watch6 part 1.jpg" class="thumbnail" alt="" ></div>
+            <div class="im1"><img src="../Images/watch6 part 2.jpg" class="thumbnail" alt=""></div>
+            <div class="im1"><img src="../Images/watch6 part 3.jpg" class="thumbnail" alt=""></div>
+            <div class="im1"><img src="../Images/watch6 part 4.jpg" class="thumbnail" alt=""></div>
+            <div class="im1"><img src="../Images/watch6 part 5.jpg" class="thumbnail" alt=""></div>
+            <div class="im1"><img src="../Images/watch6 part 6.jpg" class="thumbnail" alt=""></div>
+        </div>
+        <div class="second">  <img src="../Images/watch6 part 1.jpg" alt="" id="mainImage"></div>
+        <div class="third">
+            <div class="head"><h1>AMSS Automatic Watches for Men Diamond Skeleton Mechanical Tourbillon Self Winding Luxury Dress Wrist Watches Calendar Luminous Waterproof</h1></div>
+            <div class="star">3.5<i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-fill"></i><i class="ri-star-s-line"></i><i class="ri-star-s-line"></i></div>
+            <div class="off">Limited time deal -30%</div>
+            <div class="price">Rs. 14,000</div>
+            <div class="mrp">M.R.P.: <strike>20,000</strike> Rs</div>
+            <div class="free">Free Delivery</div>
+            <div class="like"><i class="ri-heart-3-fill" id="like"></i><b>Wishlist</b></div>
+            <div class="btn">
+                <button class="add">Add to cart</button>
+                <button class="buy">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="box-3">
+        <h2>Description</h2>
+        <p>
+            <ul>
+            <li style="--i: 1;">1. Movement: original fully automatic mechanical movement, better quality, stable and accurate travel time</li>
+            <li style="--i: 2;"> 2. Strap: solid stainless steel bracelet, drop-resistant and scratch-resistant, comfortable to wear</li>
+            <li style="--i: 3;">3. Case: stainless steel case, carefully polished several times, vacuum plating process in the furnace, good quality, does not fade for a long time</li>
+            <li style="--i: 4;">4. Waterproof: 30M life waterproof, support daily water for washing hands and face</li>
+            <li style="--i: 5;">5. Diameter: 41mm, thickness: 12.5mm</li>
+            <li style="--i: 6;">6. Bracelet width: 20mm, perimeter: 22cm</li>
+            <li style="--i: 7;">7. The day of the week, the calendar dial and the flywheel are combined into a triangle, making the methodical design concept more prominent</li>
+            <li style="--i: 8;">8. Hollow design, fashionable and generous</li>
+            </ul>
+        </p>
+    </div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".thumbnail").hover(function() {
+                var newSrc = $(this).attr("src");
+                $("#mainImage").fadeOut(200, function() {
+                    $(this).attr("src", newSrc).fadeIn(200);
+                });
+            });
+        });
+        $(document).ready(function () {
+        var a = false;
+        $('#like').click(function () {
+            if (a == false) {
+                $(this).css("color", "red");
+                a = true;
+            } else {
+                $(this).css("color", "black");
+                a = false;
+            }
+        });
+    });
+    </script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+   <link rel="stylesheet" href="login-css.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login">
+            <div class="box">
+                <label for="firstName">Full Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Alex Focault" required>
+            </div>
+            <div class="box">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" placeholder="abc@xyz.com" required>
+            </div>
+            <div class="box">
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" placeholder="91 xxxx xxxx xx" required>
+            </div>
+            <div class="box">
+                <label for="Password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>document.getElementById('login').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+     
+        var firstName = document.getElementById('firstName').value;
+        var email = document.getElementById('email').value;
+        var contactNumber = document.getElementById('contactNumber').value;
+        var password = document.getElementById('password').value;
+        
+        if (!firstName  || !email || !contactNumber || !password) {
+            alert('Please fill out all fields.');
+            return;
+        }
+        alert('Login successfully!');
+        
+    });
+    </script>
+
+
+</body>
+
+</html>
